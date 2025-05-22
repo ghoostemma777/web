@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Clases - Academia de Danza</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f4fb;
+	  background-image: url(logo%20danza.png);
+	  background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+	  body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(240, 240, 248, 0.85); /* capa semitransparente para legibilidad */
+      z-index: -1;
+    }
+
+    h1 {
+      text-align: center;
+      color: #b8005c;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 0 15px;
+      color: #b8005c;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ff007f;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      margin-bottom: 40px;
+      background-color: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      position: relative; /* para que esté encima de ::before */
+      z-index: 1;
+    }
+
+    h2 {
+      color: #b8005c;
+      margin-top: 0;
+    }
+
+    .dance-style {
+      margin-bottom: 25px;
+    }
+
+    .dance-style video {
+      display: block;
+      margin-top: 10px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(184, 0, 92, 0.7);
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 40px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #ffe5f1;
+      color: #b8005c;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover {
+      background-color: #f1e4f7;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Nuestras Clases</h1>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="clases.html">Clases</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <!-- Sección de tipos de clases -->
+<section>
+    <h2>Estilos de danza disponibles</h2>
+    <ul>
+      <li class="dance-style">
+        <strong>Ballet clásico</strong>
+        <video controls muted preload="metadata" width="320" height="180" >
+          <source src="BALLET.mp4" type="video/mp4">
+        </video>
+      </li>
+      <li class="dance-style">
+        <strong>Bachata</strong>
+        <video controls muted preload="metadata" width="320" height="180">
+          <source src="bachata.mp4" type="video/mp4">
+        </video>
+      </li>
+      <li class="dance-style">
+        <strong>Hip Hop</strong>
+        <video controls muted preload="metadata" width="320" height="180">
+          <source src="hip hop.mp4" type="video/mp4">
+        </video>
+      </li>
+      <li class="dance-style">
+        <strong>Danza Moderna</strong>
+        <video controls muted preload="metadata" width="320" height="180">
+          <source src="danza moderna.mp4" type="video/mp4">
+        </video>
+      </li>
+      <li class="dance-style">
+        <strong>Salsa</strong>
+        <video controls muted preload="metadata" width="320" height="180">
+          <source src="salsa.mp4" type="video/mp4">
+        </video>
+      </li>
+      <li class="dance-style">
+        <strong>K-Pop</strong>
+        <video controls muted preload="metadata" width="320" height="180">
+          <source src="kpop.mp4" type="video/mp4">
+        </video>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Sección de horarios -->
+  <section>
+    <h2>Horarios de Clases Grupales</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Día</th>
+          <th>Clase</th>
+          <th>Horario</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lunes</td>
+          <td>Bachata&nbsp;</td>
+          <td>10:00 AM</td>
+        </tr>
+        <tr>
+          <td>Martes</td>
+          <td>Ballet</td>
+          <td>9:00 AM</td>
+        </tr>
+        <tr>
+          <td>Miércoles</td>
+          <td>Hip Hop</td>
+          <td>11:00 AM</td>
+        </tr>
+        <tr>
+          <td>Jueves</td>
+          <td>Moderno&nbsp;</td>
+          <td>1:00 PM</td>
+        </tr>
+        <tr>
+          <td>Viernes</td>
+          <td>Salsa</td>
+          <td>3:00 PM</td>
+        </tr>
+        <tr>
+          <td>Sábado</td>
+          <td>K-Pop</td>
+          <td>11:00 AM</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</body>
+</html>
